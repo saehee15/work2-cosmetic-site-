@@ -1,0 +1,22 @@
+@mixin smallPC{ 
+    @media (max-width: 1600px){ 
+        @content; 
+    }
+}
+
+
+@mixin elip($line, $lineHeight:''){
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @if($line > 1){
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        max-height: $lineHeight * $line+px;
+    }@else{
+        white-space: nowrap;
+    }
+
+   
+}
