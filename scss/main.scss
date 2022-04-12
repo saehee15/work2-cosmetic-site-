@@ -870,7 +870,11 @@
 
         .num {
             span {
-                margin: 0 5px;
+                margin: 0 10px;
+
+                &.active{
+                    font-weight: bold;
+                }
             }
         }
 

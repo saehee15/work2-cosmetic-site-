@@ -710,7 +710,10 @@
   color: #4a4a4a;
 }
 .sc_review .paging_wrap .num span {
-  margin: 0 5px;
+  margin: 0 10px;
+}
+.sc_review .paging_wrap .num span.active {
+  font-weight: bold;
 }
 .sc_review .paging_wrap .page_btn {
   box-sizing: border-box;
