@@ -286,11 +286,18 @@ $(function () {
 
 
         // card
+        var scrollOn = false;
         $(window).scroll(function(){
             var curr = $(this).scrollTop();
             solution = $('.sc_solution').offset().top - $(window).height(); 
 
-            if(curr >= solution){
+            $(document).on("click", '.card .close_btn', function () {
+                $('.card').removeClass('on')
+                scrollOn = true;
+                
+              });
+
+            if(curr >= solution && scrollOn === false){
                 $('.card').addClass('on')
             } else {
 
@@ -298,9 +305,6 @@ $(function () {
         })
         $(window).trigger('scroll');
 
-        $(document).on("click", '.card .close_btn', function () {
-            $('.card').removeClass('on')
-            
-          });
+       
 
 })
