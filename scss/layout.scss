@@ -6,8 +6,7 @@
 
 body {
     min-width: 1440px;
-    // font-family: 'Montserrat', sans-serif;
-    font-family: $font-en02;
+    font-family: $font-en01;
 }
 
 header {
@@ -53,13 +52,10 @@ header {
 
             a {
                 display: block;
-                height: 100%;
-
-            }
-
-            //@나중에 빼기
-            img {
-                max-width: 120px;
+                width: 120px;
+                height: 120px;
+                background: url('../img/logo.png') no-repeat center;
+                background-size: 100%;
             }
         }
 
@@ -79,7 +75,6 @@ header {
                         color: #000;
                         letter-spacing: 0.2em;
                         font-weight: 600;
-
                     }
                 }
             }
@@ -123,7 +118,10 @@ header {
                         position: absolute;
                         bottom: 7px;
                         right: 7px;
-                        width: 21px;
+                        width: 20px;
+                        height: 20px;
+                        background: url('../img/search_btn.png') no-repeat center;
+                        background-size: 100%;
 
                         img {
                             width: 200%;
@@ -236,7 +234,6 @@ header {
 
                 li {
                     margin: 0 15px;
-                    // display: flex;
                     float: left;
 
                     &:last-child {
@@ -249,11 +246,28 @@ header {
                         content: "";
                     }
 
-                    img {
-                        max-height: 30px;
-                    }
-                }
+                   a{
+                    width: 28px;
+                    display: block;
+                    height: 32px;
 
+                       &.login{
+                           background: url('../img/login.png') no-repeat center;
+                           background-size: 100%;
+                           object-fit: cover;
+                       }
+                       &.cart{
+                        background: url('../img/cart.png') no-repeat center;
+                        background-size: 100%;
+                        object-fit: cover;
+                       }
+                       &.logout{
+                        background: url('../img/logout.png') no-repeat center;
+                        background-size: 100%;
+                        object-fit: cover;
+                       }
+                   }
+                }
             }
         }
     }
@@ -419,17 +433,10 @@ footer {
     }
 
     .side_btn {
-        // display: none;
         position: fixed;
-        // bottom: 105px;
-        // right: 65px;
         bottom: 160px;
         right: 120px;
         z-index: 8;
-
-        // &.on {
-        //     display: block;
-        // }
 
         .btn_wrap {
             position: relative;
@@ -484,7 +491,6 @@ footer {
                     line-height: 55px;
                     opacity: 0;
                     visibility: hidden;
-                    -webkit-transition: 0.4s;
                     transition: 0.4s;
                     transition-delay: 0s;
                 }
@@ -539,7 +545,6 @@ footer {
                     line-height: 55px;
                     opacity: 0;
                     visibility: hidden;
-                    -webkit-transition: 0.6s;
                     transition: 0.6s;
                     transition-delay: 0s;
                 }
@@ -585,7 +590,6 @@ footer {
                     line-height: 55px;
                     opacity: 0;
                     visibility: hidden;
-                    -webkit-transition: 0.6s;
                     transition: 0.6s;
                     transition-delay: 0s;
                 }
@@ -600,7 +604,6 @@ footer {
     left: 30px;
     border: 1px solid $color;
     border-radius: 5px;
-    // position: relative;
     width: 240px;
     height: 129px;
     background-color: #fff;
@@ -672,8 +675,6 @@ footer {
             width: 142px;
             padding: 0 0 0 13px;
             overflow: hidden;
-            -webkit-flex: 1;
-            -ms-flex: 1;
             flex: 1;
 
             p {
@@ -686,7 +687,6 @@ footer {
                 display: block;
                 padding-top: 7px;
                 padding-left: 4px;
-                color: #FF0000;
             }
         }
     }

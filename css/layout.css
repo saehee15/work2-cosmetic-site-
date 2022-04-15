@@ -46,10 +46,10 @@ header .header_bottom .logo {
 }
 header .header_bottom .logo a {
   display: block;
-  height: 100%;
-}
-header .header_bottom .logo img {
-  max-width: 120px;
+  width: 120px;
+  height: 120px;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: 100%;
 }
 header .header_bottom .gnb {
   text-align: right;
@@ -114,7 +114,10 @@ header .header_bottom .util_area .search_area fieldset .search_btn {
   position: absolute;
   bottom: 7px;
   right: 7px;
-  width: 21px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/search_btn.png") no-repeat center;
+  background-size: 100%;
 }
 header .header_bottom .util_area .search_area fieldset .search_btn img {
   width: 200%;
@@ -216,8 +219,28 @@ header .header_bottom .util_area .icon_box li ::after {
   clear: both;
   content: "";
 }
-header .header_bottom .util_area .icon_box li img {
-  max-height: 30px;
+header .header_bottom .util_area .icon_box li a {
+  width: 28px;
+  display: block;
+  height: 32px;
+}
+header .header_bottom .util_area .icon_box li a.login {
+  background: url("../img/login.png") no-repeat center;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header_bottom .util_area .icon_box li a.cart {
+  background: url("../img/cart.png") no-repeat center;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header_bottom .util_area .icon_box li a.logout {
+  background: url("../img/logout.png") no-repeat center;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -560,5 +583,4 @@ footer .footer_img {
   display: block;
   padding-top: 7px;
   padding-left: 4px;
-  color: #FF0000;
 }

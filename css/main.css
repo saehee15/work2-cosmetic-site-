@@ -684,8 +684,6 @@
 .sc_review ul .info .txt .review {
   font-size: 12px;
   line-height: 18px;
-  line-height: 140%;
-  white-space: normal;
   color: black;
   overflow: hidden;
   text-overflow: ellipsis;

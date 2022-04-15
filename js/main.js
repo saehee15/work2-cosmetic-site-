@@ -11,7 +11,6 @@ $(function () {
 
 
 
-
     //header search_area 클릭시
     $('.search_txt').click(function () {
         $(".search_content").removeClass('hide');
@@ -30,6 +29,7 @@ $(function () {
         $(target).addClass('on').siblings().removeClass('on')
     })
 
+    
     //.box 후버
     $(".sc_product .tab_wrap li").hover(function () {
         $(this).children(".footer").addClass('on');
@@ -272,7 +272,7 @@ $(function () {
         motion.pause()
 
 
-        $('.play .img').click(function(){
+     $('.play .img').click(function(){
            gsap.to('circle', 3,{
             ease: 'none',
             strokeDashoffset: 0,
@@ -281,8 +281,8 @@ $(function () {
                 $('.sc_video .video .player').show()
                 $('.sc_video iframe').attr("src",'https://www.youtube.com/embed/koFmbG9yDrc?autoplay=1&mute=0');
             }
-           })
         })
+     })
 
 
         // card

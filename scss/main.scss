@@ -8,7 +8,6 @@
     .visual_slide {
         padding: 0 180px;
         overflow: visible;
-        // max-width: 1420px;
         margin: 0 auto;
         position: relative;
 
@@ -60,10 +59,6 @@
                     width: 7px;
                     height: 7px;
                     background: #022831;
-                    -o-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    -moz-transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
                     transform: rotate(45deg);
                     display: inline-block;
                     vertical-align: middle;
@@ -116,7 +111,6 @@
                 position: absolute;
                 bottom: -6px;
                 left: 0;
-                -webkit-transition: 0.3s;
                 transition: 0.3s;
             }
 
@@ -287,7 +281,6 @@
     padding: 105px 0 85px;
 
     .inner {
-        // max-width: 1620px;
         padding: 0 50px;
         margin: 0 auto;
         font-size: 0;
@@ -343,7 +336,6 @@
                         position: absolute;
                         top: 50%;
                         left: 95px;
-                        -webkit-transition: 0.4s;
                         transition: 0.4s;
                     }
 
@@ -369,13 +361,9 @@
                 }
 
                 ul {
-                    // display: none;
                     width: 100%;
                     font-size: 0;
                     padding-bottom: 1px;
-                    // overflow: hidden;
-
-
 
                     li {
                         width: calc(100% / 3);
@@ -586,7 +574,6 @@
                 position: absolute;
                 bottom: -6px;
                 left: 0;
-                -webkit-transition: 0.3s;
                 transition: 0.3s;
             }
 
@@ -788,8 +775,6 @@
     }
 
     ul {
-
-
         li {
             float: left;
             width: 215px;
@@ -839,12 +824,6 @@
                 .review {
                     font-size: 12px;
                     line-height: 18px;
-
-
-
-
-                    line-height: 140%;
-                    white-space: normal;
                     color: black;
                     @include elip(2, 18)
                 }
@@ -943,7 +922,6 @@
             font-size: 0;
             margin-top: 110px;
             display: flex;
-            // justify-content: space-between;
             align-items: start;
 
             li {
@@ -962,7 +940,6 @@
                     margin-bottom: 25px;
                     height: 70px;
                     opacity: 0.3;
-                    -webkit-transition: 0.4s;
                     transition: 0.4s;
 
                 }
@@ -1052,7 +1029,6 @@
                 height: 15px;
                 background: url('../img/arrow1.png') center center no-repeat;
                 background-size: 100%;
-                -webkit-transition: 0.3s;
                 transition: 0.3s;
             }
         }
@@ -1122,7 +1098,6 @@
                     display: inline-block;
                     vertical-align: middle;
                     margin: 0 23px 0 12px;
-                    -webkit-transition: 0.4s;
                     transition: 0.4s;
                 }
             }
@@ -1142,9 +1117,7 @@
                     left: 50%;
                     margin: -70px 0 0 -70px;
                     font-size: 0;
-                    -webkit-transform: scale(0.3);
                     transform: scale(0.3);
-                    -webkit-transition: 0.4s;
                     transition: 0.4s;
 
                     &::before {
@@ -1232,7 +1205,6 @@
                     position: absolute;
                     bottom: 55px;
                     left: 190px;
-                    -webkit-transition: 0.3s;
                     transition: 0.3s;
 
                 }
@@ -1272,10 +1244,6 @@
                 border-radius: 0%;
                 width: 7px;
                 height: 7px;
-                -o-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
                 padding: 3px;
                 margin: 0 7px;
@@ -1302,7 +1270,6 @@
     overflow: hidden;
 
     .inner {
-        // max-width: 1620px;
         padding: 0 50px;
         margin: 0 auto;
     }
@@ -1383,7 +1350,6 @@
                         border-radius: 50%;
                         opacity: 0;
                         transform: scale(0.4) rotate(90deg);
-                        -webkit-transition: 0.3s;
                         transition: 0.3s;
 
                         &::before {
@@ -1395,7 +1361,6 @@
                             position: absolute;
                             top: 50%;
                             left: 50%;
-                            -webkit-transition: 0.5s;
                             transition: 0.5s;
 
                         }
